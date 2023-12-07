@@ -1,0 +1,101 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  scroll-behavior: smooth;
+}
+
+/* Navigation styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #aaa;
+}
+
+/* Section styles with animation */
+.section {
+  padding: 100px 20px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  text-align: center;
+}
+
+/* Specific section styles */
+#home {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+#about {
+  background-color: #111;
+  color: #fff;
+}
+
+#projects {
+  background-color: #222;
+  color: #fff;
+}
+
+#contact {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Fade-in animation on section enter */
+.section.active {
+  opacity: 1;
+}
+
+/* Increase font sizes and center text */
+h1, h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Spacing between project items */
+#projects ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#projects li {
+  margin-bottom: 20px;
+}
